@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a633cece-90ea-4fbd-9d18-f7df7f28186e" name="Default Changelist" comment="gitignore">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1. GetStarted/.expo-shared/assets.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="ProjectId" id="1iP6NwS7EbKBa2htZGNEmLbf5n3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Web-developing" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a633cece-90ea-4fbd-9d18-f7df7f28186e" name="Default Changelist" comment="" />
+      <created>1601796843997</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601796843997</updated>
+      <workItem from="1601796846695" duration="3234000" />
+      <workItem from="1601805850453" duration="599000" />
+      <workItem from="1601810683905" duration="3087000" />
+      <workItem from="1601816393953" duration="8486000" />
+      <workItem from="1601833591199" duration="1021000" />
+    </task>
+    <task id="LOCAL-00001" summary="gitignore">
+      <created>1601798562582</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601798562582</updated>
+    </task>
+    <task id="LOCAL-00002" summary="gitignore">
+      <created>1601798637791</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601798637791</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Getting started project">
+      <created>1601798728180</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601798728180</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Divide into separate components">
+      <created>1601829914495</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601829914495</updated>
+    </task>
+    <task id="LOCAL-00005" summary="touchable and deleting items">
+      <created>1601831569828</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601831569828</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add Modal for adding goals">
+      <created>1601833250012</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601833250012</updated>
+    </task>
+    <task id="LOCAL-00007" summary="gitignore">
+      <created>1601834270461</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1601834270461</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Getting started project" />
+    <MESSAGE value="Divide into separate components" />
+    <MESSAGE value="touchable and deleting items" />
+    <MESSAGE value="add Modal for adding goals" />
+    <MESSAGE value="gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="743" y="280" width="432" height="487" key="FileChooserDialogImpl" timestamp="1601819520519">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="743" y="280" width="432" height="487" key="FileChooserDialogImpl/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1601819520519" />
+    <state x="474" y="420" width="622" height="199" key="Github.ShareDialog" timestamp="1601834535863">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="474" y="420" width="622" height="199" key="Github.ShareDialog/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1601834535863" />
+    <state x="456" y="157" width="1007" height="733" key="SettingsEditor" timestamp="1601816374817">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="456" y="157" width="1007" height="733" key="SettingsEditor/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1601816374817" />
+    <state x="556" y="252" key="Vcs.Push.Dialog.v2" timestamp="1601834274732">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="556" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1601834274732" />
+    <state x="740" y="175" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1601798613058">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="175" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1601798613058" />
+    <state x="753" y="431" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601834242116">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="753" y="431" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1601834242116" />
+    <state x="716" y="381" width="440" height="215" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1601834325664">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="716" y="381" width="440" height="215" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1601834325664" />
+    <state x="686" y="427" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1601798522257">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="686" y="427" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1601798522257" />
+  </component>
+</project>

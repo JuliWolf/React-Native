@@ -19,17 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a633cece-90ea-4fbd-9d18-f7df7f28186e" name="Default Changelist" comment="Base APP">
-      <change afterPath="$PROJECT_DIR$/2. Components &amp; Layout/components/Card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2. Components &amp; Layout/components/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2. Components &amp; Layout/constants/color.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2. Components &amp; Layout/screens/StartGameScreen.js" afterDir="false" />
+    <list default="true" id="a633cece-90ea-4fbd-9d18-f7df7f28186e" name="Default Changelist" comment="Header, and Card styles">
+      <change afterPath="$PROJECT_DIR$/2. Components &amp; Layout/components/Input.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/.expo/packager-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/.expo/packager-info.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/screens/StartGameScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/screens/StartGameScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +74,7 @@
       <workItem from="1601816393953" duration="8486000" />
       <workItem from="1601833591199" duration="2534000" />
       <workItem from="1601883620637" duration="665000" />
-      <workItem from="1601985073284" duration="6979000" />
+      <workItem from="1601985073284" duration="8078000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore">
       <created>1601798562582</created>
@@ -174,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601839076004</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Header, and Card styles">
+      <created>1601993510931</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1601993510931</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +201,8 @@
     <MESSAGE value="project" />
     <MESSAGE value="update" />
     <MESSAGE value="Base APP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Base APP" />
+    <MESSAGE value="Header, and Card styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Header, and Card styles" />
   </component>
   <component name="WindowStateProjectService">
     <state x="743" y="280" width="432" height="487" key="FileChooserDialogImpl" timestamp="1601986761220">
@@ -216,10 +217,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="456" y="157" width="1007" height="733" key="SettingsEditor/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1601991024127" />
-    <state x="556" y="252" key="Vcs.Push.Dialog.v2" timestamp="1601839080711">
+    <state x="556" y="252" key="Vcs.Push.Dialog.v2" timestamp="1601993515151">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="556" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1601839080711" />
+    <state x="556" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1601993515151" />
     <state x="740" y="175" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1601798613058">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

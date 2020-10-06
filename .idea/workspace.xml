@@ -19,11 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a633cece-90ea-4fbd-9d18-f7df7f28186e" name="Default Changelist" comment="showing selected number">
-      <change afterPath="$PROJECT_DIR$/2. Components &amp; Layout/screens/GameScreen.js" afterDir="false" />
+    <list default="true" id="a633cece-90ea-4fbd-9d18-f7df7f28186e" name="Default Changelist" comment="GameScreen">
+      <change afterPath="$PROJECT_DIR$/2. Components &amp; Layout/screens/GameOverScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/.expo/packager-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/.expo/packager-info.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/screens/StartGameScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/screens/StartGameScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/screens/GameScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/screens/GameScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,10 +56,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Web-developing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -75,7 +78,10 @@
       <workItem from="1601816393953" duration="8486000" />
       <workItem from="1601833591199" duration="2534000" />
       <workItem from="1601883620637" duration="665000" />
-      <workItem from="1601985073284" duration="11681000" />
+      <workItem from="1601985073284" duration="11796000" />
+      <workItem from="1602013088358" duration="271000" />
+      <workItem from="1602013567370" duration="27000" />
+      <workItem from="1602013683421" duration="2822000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore">
       <created>1601798562582</created>
@@ -196,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601998705877</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="GameScreen">
+      <created>1602000090620</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1602000090620</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,9 +240,14 @@
     <MESSAGE value="custom Input components" />
     <MESSAGE value="alert message" />
     <MESSAGE value="showing selected number" />
-    <option name="LAST_COMMIT_MESSAGE" value="showing selected number" />
+    <MESSAGE value="GameScreen" />
+    <option name="LAST_COMMIT_MESSAGE" value="GameScreen" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="691" y="357" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1602014147921">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="691" y="357" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602014147921" />
     <state x="743" y="280" width="432" height="487" key="FileChooserDialogImpl" timestamp="1601986761220">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -238,14 +256,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="474" y="420" width="622" height="199" key="Github.ShareDialog/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1601834535863" />
-    <state x="0" y="0" width="1920" height="1040" key="SettingsEditor" timestamp="1601999174866">
+    <state x="263" y="164" width="1002" height="733" key="SettingsEditor" timestamp="1602016740163">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="0" y="0" width="1920" height="1040" key="SettingsEditor/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1601999174866" />
-    <state x="556" y="252" key="Vcs.Push.Dialog.v2" timestamp="1601998709097">
+    <state x="263" y="164" width="1002" height="733" key="SettingsEditor/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602016740163" />
+    <state x="556" y="252" key="Vcs.Push.Dialog.v2" timestamp="1602000094012">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="556" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1601998709096" />
+    <state x="556" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602000094012" />
     <state x="740" y="175" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1601798613058">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

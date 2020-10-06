@@ -11,6 +11,7 @@ import {
 
 import Card from "../components/Card";
 import Input from "../components/Input";
+import NumberContainer from "../components/NumberContainer";
 
 import Colors from '../constants/color';
 
@@ -28,12 +29,6 @@ const StartGamScreen = (props) => {
         setConfirmed(false);
     };
 
-    let confirmedOutput;
-
-    if(confirmed){
-        confirmedOutput = <Text> Chosen Number: {selectedNumber} </Text>
-    }
-
     const confirmInputHandler = () => {
         const chosenNumber = parseInt(enteredValue);
         if(isNaN(chosenNumber) || chosenNumber <= 0 || chosenNumber > 99){
@@ -45,7 +40,22 @@ const StartGamScreen = (props) => {
         setConfirmed(true);
         setSelectedNumber(chosenNumber);
         setEnteredValue('');
+        Keyboard.dismiss();
     };
+
+    let confirmedOutput;
+
+    if(confirmed){
+        confirmedOutput = (
+            <Card style={styles.summaryContainer}>
+                <Text> You selected</Text>
+                <NumberContainer>
+                    {selectedNumber}
+                </NumberContainer>
+                <Button title='START GAME'/>
+            </Card>
+        )
+    }
 
     return (
         <TouchableWithoutFeedback onPress={() => {
@@ -115,6 +125,10 @@ const styles = StyleSheet.create({
     input: {
         width: 50,
         textAlign: 'center'
+    },
+    summaryContainer: {
+        marginTop: 20,
+        alignItems: 'center'
     }
 })
 

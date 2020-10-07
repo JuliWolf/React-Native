@@ -19,12 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a633cece-90ea-4fbd-9d18-f7df7f28186e" name="Default Changelist" comment="GameScreen">
-      <change afterPath="$PROJECT_DIR$/2. Components &amp; Layout/screens/GameOverScreen.js" afterDir="false" />
+    <list default="true" id="a633cece-90ea-4fbd-9d18-f7df7f28186e" name="Default Changelist" comment="game over screen">
+      <change afterPath="$PROJECT_DIR$/2. Components &amp; Layout/assets/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2. Components &amp; Layout/components/BodyText.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2. Components &amp; Layout/components/TitleText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/.expo/packager-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/.expo/packager-info.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/screens/GameOverScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/screens/GameOverScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/screens/GameScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/screens/GameScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/screens/StartGameScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/screens/StartGameScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,12 +62,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/2. Components &amp; Layout/assets" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/2. Components &amp; Layout/assets" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -81,7 +92,8 @@
       <workItem from="1601985073284" duration="11796000" />
       <workItem from="1602013088358" duration="271000" />
       <workItem from="1602013567370" duration="27000" />
-      <workItem from="1602013683421" duration="2822000" />
+      <workItem from="1602013683421" duration="2855000" />
+      <workItem from="1602054254852" duration="2980000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore">
       <created>1601798562582</created>
@@ -209,11 +221,18 @@
       <option name="project" value="LOCAL" />
       <updated>1602000090620</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="game over screen">
+      <created>1602017440691</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1602017440691</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -241,7 +260,8 @@
     <MESSAGE value="alert message" />
     <MESSAGE value="showing selected number" />
     <MESSAGE value="GameScreen" />
-    <option name="LAST_COMMIT_MESSAGE" value="GameScreen" />
+    <MESSAGE value="game over screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="game over screen" />
   </component>
   <component name="WindowStateProjectService">
     <state x="691" y="357" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1602014147921">
@@ -256,14 +276,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="474" y="420" width="622" height="199" key="Github.ShareDialog/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1601834535863" />
-    <state x="263" y="164" width="1002" height="733" key="SettingsEditor" timestamp="1602016740163">
+    <state x="263" y="164" width="1002" height="733" key="SettingsEditor" timestamp="1602058627572">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="263" y="164" width="1002" height="733" key="SettingsEditor/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602016740163" />
-    <state x="556" y="252" key="Vcs.Push.Dialog.v2" timestamp="1602000094012">
+    <state x="263" y="164" width="1002" height="733" key="SettingsEditor/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602058627572" />
+    <state x="556" y="252" key="Vcs.Push.Dialog.v2" timestamp="1602017444023">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="556" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602000094012" />
+    <state x="556" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602017444023" />
     <state x="740" y="175" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1601798613058">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

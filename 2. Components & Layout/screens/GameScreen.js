@@ -9,7 +9,7 @@ const generateRandomBetween = (min, max, exclude) => {
     max = Math.floor(max);
     const rndNum = Math.floor(Math.random() * (max - min)) + min;
     console.log(rndNum);
-    if(rndNum == exclude){
+    if(rndNum === exclude){
         return generateRandomBetween(min, max, exclude);
     }else{
         return rndNum;
@@ -50,7 +50,7 @@ const GameScreen = (props) => {
         }
         const nextNumber = generateRandomBetween(currentLow.current, currentHigh.current, currentGuess);
         setCurrentGuess(nextNumber);
-        setRounds(curRounds => curRounds++);
+        setRounds(curRounds => curRounds + 1);
 
     };
 

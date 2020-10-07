@@ -19,13 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a633cece-90ea-4fbd-9d18-f7df7f28186e" name="Default Changelist" comment="styling gameover screen">
-      <change afterPath="$PROJECT_DIR$/2. Components &amp; Layout/components/MainButton.js" afterDir="false" />
+    <list default="true" id="a633cece-90ea-4fbd-9d18-f7df7f28186e" name="Default Changelist" comment="custom button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/.expo/packager-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/.expo/packager-info.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/screens/GameOverScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/screens/GameOverScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/screens/GameScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/screens/GameScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/screens/StartGameScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/screens/StartGameScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +86,7 @@
       <workItem from="1602013683421" duration="2855000" />
       <workItem from="1602054254852" duration="6297000" />
       <workItem from="1602064502520" duration="23000" />
-      <workItem from="1602100731048" duration="1293000" />
+      <workItem from="1602100731048" duration="1552000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore">
       <created>1601798562582</created>
@@ -246,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602061323789</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="custom button">
+      <created>1602102075444</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1602102075444</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +285,8 @@
     <MESSAGE value="styling text" />
     <MESSAGE value="images, local and from uri" />
     <MESSAGE value="styling gameover screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="styling gameover screen" />
+    <MESSAGE value="custom button" />
+    <option name="LAST_COMMIT_MESSAGE" value="custom button" />
   </component>
   <component name="WindowStateProjectService">
     <state x="691" y="357" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1602014147921">
@@ -301,10 +305,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="263" y="164" width="1002" height="733" key="SettingsEditor/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602058627572" />
-    <state x="556" y="252" key="Vcs.Push.Dialog.v2" timestamp="1602061336526">
+    <state x="556" y="252" key="Vcs.Push.Dialog.v2" timestamp="1602102078954">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="556" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602061336526" />
+    <state x="556" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602102078954" />
     <state x="740" y="175" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1601798613058">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

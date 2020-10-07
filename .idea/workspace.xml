@@ -19,15 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a633cece-90ea-4fbd-9d18-f7df7f28186e" name="Default Changelist" comment="game over screen">
-      <change afterPath="$PROJECT_DIR$/2. Components &amp; Layout/assets/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2. Components &amp; Layout/components/BodyText.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2. Components &amp; Layout/components/TitleText.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="a633cece-90ea-4fbd-9d18-f7df7f28186e" name="Default Changelist" comment="styling text">
+      <change afterPath="$PROJECT_DIR$/2. Components &amp; Layout/constants/default-styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/.expo/packager-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/.expo/packager-info.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/components/TitleText.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/components/TitleText.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/screens/GameOverScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/screens/GameOverScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/screens/GameScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/screens/GameScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/screens/StartGameScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/screens/StartGameScreen.js" afterDir="false" />
@@ -93,7 +88,7 @@
       <workItem from="1602013088358" duration="271000" />
       <workItem from="1602013567370" duration="27000" />
       <workItem from="1602013683421" duration="2855000" />
-      <workItem from="1602054254852" duration="2980000" />
+      <workItem from="1602054254852" duration="4518000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore">
       <created>1601798562582</created>
@@ -228,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602017440691</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="styling text">
+      <created>1602058657427</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1602058657427</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,7 +263,8 @@
     <MESSAGE value="showing selected number" />
     <MESSAGE value="GameScreen" />
     <MESSAGE value="game over screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="game over screen" />
+    <MESSAGE value="styling text" />
+    <option name="LAST_COMMIT_MESSAGE" value="styling text" />
   </component>
   <component name="WindowStateProjectService">
     <state x="691" y="357" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1602014147921">
@@ -280,10 +283,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="263" y="164" width="1002" height="733" key="SettingsEditor/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602058627572" />
-    <state x="556" y="252" key="Vcs.Push.Dialog.v2" timestamp="1602017444023">
+    <state x="556" y="252" key="Vcs.Push.Dialog.v2" timestamp="1602058660602">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="556" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602017444023" />
+    <state x="556" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602058660602" />
     <state x="740" y="175" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1601798613058">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -292,6 +295,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="753" y="431" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1601834242116" />
+    <state x="665" y="104" width="713" height="831" key="find.popup" timestamp="1602060138255">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="665" y="104" width="713" height="831" key="find.popup/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602060138255" />
     <state x="716" y="381" width="440" height="215" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1601834325664">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

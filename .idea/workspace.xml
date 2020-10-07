@@ -19,13 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a633cece-90ea-4fbd-9d18-f7df7f28186e" name="Default Changelist" comment="styling text">
-      <change afterPath="$PROJECT_DIR$/2. Components &amp; Layout/constants/default-styles.js" afterDir="false" />
+    <list default="true" id="a633cece-90ea-4fbd-9d18-f7df7f28186e" name="Default Changelist" comment="images, local and from uri">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/components/TitleText.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/components/TitleText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/components/BodyText.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/components/BodyText.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/screens/GameOverScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/screens/GameOverScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/screens/GameScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/screens/GameScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/screens/StartGameScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/screens/StartGameScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +85,7 @@
       <workItem from="1602013088358" duration="271000" />
       <workItem from="1602013567370" duration="27000" />
       <workItem from="1602013683421" duration="2855000" />
-      <workItem from="1602054254852" duration="4518000" />
+      <workItem from="1602054254852" duration="5650000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore">
       <created>1601798562582</created>
@@ -230,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602058657427</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="images, local and from uri">
+      <created>1602060200732</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1602060200732</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +268,8 @@
     <MESSAGE value="GameScreen" />
     <MESSAGE value="game over screen" />
     <MESSAGE value="styling text" />
-    <option name="LAST_COMMIT_MESSAGE" value="styling text" />
+    <MESSAGE value="images, local and from uri" />
+    <option name="LAST_COMMIT_MESSAGE" value="images, local and from uri" />
   </component>
   <component name="WindowStateProjectService">
     <state x="691" y="357" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1602014147921">
@@ -283,10 +288,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="263" y="164" width="1002" height="733" key="SettingsEditor/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602058627572" />
-    <state x="556" y="252" key="Vcs.Push.Dialog.v2" timestamp="1602058660602">
+    <state x="556" y="252" key="Vcs.Push.Dialog.v2" timestamp="1602060204145">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="556" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602058660602" />
+    <state x="556" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602060204145" />
     <state x="740" y="175" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1601798613058">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

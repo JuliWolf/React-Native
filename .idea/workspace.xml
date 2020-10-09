@@ -19,11 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a633cece-90ea-4fbd-9d18-f7df7f28186e" name="Default Changelist" comment="add different orientation">
+    <list default="true" id="a633cece-90ea-4fbd-9d18-f7df7f28186e" name="Default Changelist" comment="ScreenOrientation from expo">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/.expo/packager-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/.expo/packager-info.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/screens/GameScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/screens/GameScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/.expo/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/.expo/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/components/MainButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/components/MainButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/screens/StartGameScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/screens/StartGameScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +93,9 @@
       <workItem from="1602100731048" duration="2272000" />
       <workItem from="1602141466377" duration="9107000" />
       <workItem from="1602169398346" duration="712000" />
-      <workItem from="1602183741528" duration="4922000" />
+      <workItem from="1602183741528" duration="5294000" />
+      <workItem from="1602231698325" duration="6328000" />
+      <workItem from="1602271195161" duration="2693000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore">
       <created>1601798562582</created>
@@ -296,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602188537491</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="ScreenOrientation from expo">
+      <created>1602188980140</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1602188980140</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,17 +349,18 @@
     <MESSAGE value="styling of listItem and implementing FlaList component" />
     <MESSAGE value="Adaptive design" />
     <MESSAGE value="add different orientation" />
-    <option name="LAST_COMMIT_MESSAGE" value="add different orientation" />
+    <MESSAGE value="ScreenOrientation from expo" />
+    <option name="LAST_COMMIT_MESSAGE" value="ScreenOrientation from expo" />
   </component>
   <component name="WindowStateProjectService">
     <state x="691" y="357" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1602014147921">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="691" y="357" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602014147921" />
-    <state x="743" y="280" width="432" height="487" key="FileChooserDialogImpl" timestamp="1602159510493">
+    <state x="743" y="280" width="432" height="487" key="FileChooserDialogImpl" timestamp="1602233123317">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="743" y="280" width="432" height="487" key="FileChooserDialogImpl/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602159510493" />
+    <state x="743" y="280" width="432" height="487" key="FileChooserDialogImpl/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602233123317" />
     <state x="474" y="420" width="622" height="199" key="Github.ShareDialog" timestamp="1601834535863">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -357,10 +369,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="263" y="164" width="1002" height="733" key="SettingsEditor/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602058627572" />
-    <state x="556" y="252" key="Vcs.Push.Dialog.v2" timestamp="1602188541609">
+    <state x="556" y="252" key="Vcs.Push.Dialog.v2" timestamp="1602188983117">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="556" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602188541609" />
+    <state x="556" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602188983117" />
     <state x="740" y="175" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1601798613058">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

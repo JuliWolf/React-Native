@@ -147,8 +147,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 15
     },
     button: {
-        // width: 100
-        width: buttonWidth
+        // width: 10
     },
     input: {
         width: 50,

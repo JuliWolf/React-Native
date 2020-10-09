@@ -19,13 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a633cece-90ea-4fbd-9d18-f7df7f28186e" name="Default Changelist" comment="ScreenOrientation from expo">
+    <list default="true" id="a633cece-90ea-4fbd-9d18-f7df7f28186e" name="Default Changelist" comment="respective type of platform">
+      <change afterPath="$PROJECT_DIR$/2. Components &amp; Layout/components/MainButton.ios.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/.expo/packager-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/.expo/packager-info.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/.expo/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/.expo/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/components/MainButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/components/MainButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/screens/StartGameScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/screens/StartGameScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/components/MainButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/components/MainButton.android.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +95,7 @@
       <workItem from="1602169398346" duration="712000" />
       <workItem from="1602183741528" duration="5294000" />
       <workItem from="1602231698325" duration="6328000" />
-      <workItem from="1602271195161" duration="2693000" />
+      <workItem from="1602271195161" duration="3033000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore">
       <created>1601798562582</created>
@@ -307,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602188980140</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="respective type of platform">
+      <created>1602278358901</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1602278358901</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,7 +357,8 @@
     <MESSAGE value="Adaptive design" />
     <MESSAGE value="add different orientation" />
     <MESSAGE value="ScreenOrientation from expo" />
-    <option name="LAST_COMMIT_MESSAGE" value="ScreenOrientation from expo" />
+    <MESSAGE value="respective type of platform" />
+    <option name="LAST_COMMIT_MESSAGE" value="respective type of platform" />
   </component>
   <component name="WindowStateProjectService">
     <state x="691" y="357" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1602014147921">
@@ -381,10 +389,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="753" y="431" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1601834242116" />
-    <state x="665" y="104" width="713" height="831" key="find.popup" timestamp="1602060138255">
+    <state x="665" y="104" width="713" height="831" key="find.popup" timestamp="1602278570562">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="665" y="104" width="713" height="831" key="find.popup/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602060138255" />
+    <state x="665" y="104" width="713" height="831" key="find.popup/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602278570562" />
     <state x="716" y="381" width="440" height="215" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1601834325664">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

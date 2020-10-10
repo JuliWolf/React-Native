@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a633cece-90ea-4fbd-9d18-f7df7f28186e" name="Default Changelist" comment="separate components for different platforms">
+    <list default="true" id="a633cece-90ea-4fbd-9d18-f7df7f28186e" name="Default Changelist" comment="SafeAreaView">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/.expo/packager-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/.expo/packager-info.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +91,8 @@
       <workItem from="1602169398346" duration="712000" />
       <workItem from="1602183741528" duration="5294000" />
       <workItem from="1602231698325" duration="6328000" />
-      <workItem from="1602271195161" duration="4352000" />
+      <workItem from="1602271195161" duration="5159000" />
+      <workItem from="1602323561109" duration="1897000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore">
       <created>1601798562582</created>
@@ -318,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602278665263</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="SafeAreaView">
+      <created>1602280113729</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1602280113729</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +344,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Divide into separate components" />
     <MESSAGE value="touchable and deleting items" />
     <MESSAGE value="add Modal for adding goals" />
     <MESSAGE value="gitignore" />
@@ -362,7 +368,8 @@
     <MESSAGE value="ScreenOrientation from expo" />
     <MESSAGE value="respective type of platform" />
     <MESSAGE value="separate components for different platforms" />
-    <option name="LAST_COMMIT_MESSAGE" value="separate components for different platforms" />
+    <MESSAGE value="SafeAreaView" />
+    <option name="LAST_COMMIT_MESSAGE" value="SafeAreaView" />
   </component>
   <component name="WindowStateProjectService">
     <state x="691" y="357" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1602014147921">
@@ -381,10 +388,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="263" y="164" width="1002" height="733" key="SettingsEditor/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602058627572" />
-    <state x="556" y="252" key="Vcs.Push.Dialog.v2" timestamp="1602278669796">
+    <state x="556" y="252" key="Vcs.Push.Dialog.v2" timestamp="1602280116854">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="556" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602278669796" />
+    <state x="556" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.32.1920.1080@0.0.1920.1080" timestamp="1602280116854" />
     <state x="740" y="175" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1601798613058">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

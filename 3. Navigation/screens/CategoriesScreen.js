@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, Button} from "react-native";
+import {View, Text, StyleSheet, Button, FlatList} from "react-native";
 
 const CategoriesScreen = (props) => {
 
@@ -8,6 +8,8 @@ const CategoriesScreen = (props) => {
             <Text>The Categories Screen!</Text>
             <Button title="Go to Meals!" onPress={ () => {
                 props.navigation.navigate({routeName: 'CategoryMeals'})
+                // Нет возможности вернуться, так как в списке переходов нет предыдущей формы
+                // props.navigation.replace({routeName: 'CategoryMeals'})
             }}/>
         </View>
     );

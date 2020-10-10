@@ -364,6 +364,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="touchable and deleting items" />
     <MESSAGE value="add Modal for adding goals" />
     <MESSAGE value="gitignore" />
     <MESSAGE value="project" />

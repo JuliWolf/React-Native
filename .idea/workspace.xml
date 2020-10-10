@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a633cece-90ea-4fbd-9d18-f7df7f28186e" name="Default Changelist" comment="SafeAreaView">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2. Components &amp; Layout/.expo/packager-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/2. Components &amp; Layout/.expo/packager-info.json" afterDir="false" />
+    <list default="true" id="a633cece-90ea-4fbd-9d18-f7df7f28186e" name="Default Changelist" comment="setup new project">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3. Navigation" beforeDir="false" afterPath="$PROJECT_DIR$/3. Navigation" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +92,7 @@
       <workItem from="1602183741528" duration="5294000" />
       <workItem from="1602231698325" duration="6328000" />
       <workItem from="1602271195161" duration="5159000" />
-      <workItem from="1602323561109" duration="1897000" />
+      <workItem from="1602323561109" duration="2200000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore">
       <created>1601798562582</created>
@@ -325,7 +325,21 @@
       <option name="project" value="LOCAL" />
       <updated>1602280113729</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="setup new project">
+      <created>1602326521025</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1602326521025</updated>
+    </task>
+    <task id="LOCAL-00035" summary="setup new project">
+      <created>1602326564262</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1602326564262</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +358,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="touchable and deleting items" />
     <MESSAGE value="add Modal for adding goals" />
     <MESSAGE value="gitignore" />
     <MESSAGE value="project" />
@@ -369,7 +382,8 @@
     <MESSAGE value="respective type of platform" />
     <MESSAGE value="separate components for different platforms" />
     <MESSAGE value="SafeAreaView" />
-    <option name="LAST_COMMIT_MESSAGE" value="SafeAreaView" />
+    <MESSAGE value="setup new project" />
+    <option name="LAST_COMMIT_MESSAGE" value="setup new project" />
   </component>
   <component name="WindowStateProjectService">
     <state x="691" y="357" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1602014147921">

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect, useCallback} from 'react';
 import {View, Text, StyleSheet, Switch, Platform} from "react-native";
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
 
@@ -10,8 +10,8 @@ const FilterSwitch = props => {
         <View style={styles.filterContainer}>
             <Text>{props.label}</Text>
             <Switch
-                trackColor={{true: Colors.primaryColor}}
-                thumbColor={Platform.OS === 'android' ? Colors.primaryColor : ''}
+                trackColor={{true: Colors.primaryColor, false: Platform.OS === 'android' ? '#a2a1a1' : ''}}
+                thumbColor={Platform.OS === 'android' ? (props.state ? 'white' : Colors.primaryColor) : ''}
                 value={props.state}
                 onValueChange={props.onChange}/>
         </View>
@@ -19,10 +19,29 @@ const FilterSwitch = props => {
 }
 
 const FiltersScreen = (props) => {
+    const {navigation} = props;
+
     const [isGlutenFree, setIsGlutenFree] = useState(false);
     const [isLactoseFree, setIsLactoseFree] = useState(false);
     const [isVegan, setIsVegan] = useState(false);
     const [isVegetarian, setIsVegetarian] = useState(false);
+
+    const saveFilters = useCallback(() => {
+        const appliedFilter = {
+            isGlutenFree,
+            isLactoseFree,
+            isVegan,
+            isVegetarian
+        };
+    }, [isGlutenFree, isLactoseFree, isVegan, isVegetarian]);
+
+    useEffect(() => {
+        navigation.setParams({
+            save: saveFilters
+        });
+
+    }, [saveFilters])
+
     return (
         <View style={styles.screen}>
             <Text style={styles.title}>Available Filters</Text>
@@ -44,9 +63,20 @@ FiltersScreen.navigationOptions = (navData) => {
             </HeaderButtons>
         )
     }
+
+    const headerRight = () => {
+        return (
+            <HeaderButtons HeaderButtonComponent={HeaderButton}>
+                <Item title="Menu" iconName="ios-save" onPress={() => {
+                    navData.navigation.getParam('save')();
+                }}/>
+            </HeaderButtons>
+        )
+    }
     return {
         headerTitle: 'Filter Meals',
-        headerLeft: (headerLeftButton)
+        headerLeft: (headerLeftButton),
+        headerRight: (headerRight)
     }
 };
 
@@ -66,7 +96,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        width: '80%'
+        width: '80%',
+        marginVertical: 15
     }
 })
 

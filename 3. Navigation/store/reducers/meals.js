@@ -19,7 +19,7 @@ const mealReducer = (state = initialState, action) => {
 
 function toggleFavoriteHandler(state, action){
     const existingIndex = state.favoriteMeals.findIndex(meal => meal.id === action.mealId);
-    if(existingIndex > 0){
+    if(existingIndex >= 0){
         const updatedFavMeals = [...state.favoriteMeals];
         updatedFavMeals.splice(existingIndex, 1);
         return {...state, favoriteMeals: updatedFavMeals}

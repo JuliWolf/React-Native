@@ -11,6 +11,8 @@ const mealReducer = (state = initialState, action) => {
     switch(action.type){
         case mealActions.TOGGLE_FAVORITE:
             return toggleFavoriteHandler(state, action);
+        case mealActions.SET_FILTERS:
+            return filterMealsHandler(state, action);
         default:
             return state;
     }
@@ -30,6 +32,26 @@ function toggleFavoriteHandler(state, action){
             ))
         }
     }
+}
+
+function filterMealsHandler(state, action){
+    const appliedFilters = action.filters;
+    const filteredMeals = state.meals.filter(meal => {
+        if(appliedFilters.isGlutenFree && !meal.isGlutenFree){
+            return false;
+        }
+        if(appliedFilters.isLactoseFree && !meal.isLactoseFree){
+            return false;
+        }
+        if(appliedFilters.isVegetarian && !meal.isVegetarian){
+            return false;
+        }
+        if(appliedFilters.isVegan && !meal.isVegan){
+            return false;
+        }
+        return true;
+    });
+    return {...state, filteredMeals: filteredMeals}
 }
 
 export default mealReducer;

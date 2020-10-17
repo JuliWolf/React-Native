@@ -10,6 +10,8 @@ export default (state = initialState, action) => {
     switch(action.type){
         case actions.ADD_TO_CART:
             return addToCart(state, action);
+        case actions.REMOVE_FROM_CART:
+            return removeFromCart(state, action);
         default:
             return state
     }
@@ -37,5 +39,29 @@ const addToCart = (state, action) => {
         ...state,
         items: {...state.items, [addedProduct.id]: cartItem},
         totalAmount: state.totalAmount + productPrice
+    }
+};
+
+const removeFromCart = (state, action) => {
+    const selectedCartItem = state.items[action.pid]
+    const currentQuantity = selectedCartItem.quantity;
+    let updatedCartItems;
+    if(currentQuantity > 1){
+        const updatedCartItem = new CartItem(
+            selectedCartItem. quantity - 1,
+            selectedCartItem.productPrice,
+            selectedCartItem.productTitle,
+            selectedCartItem.sum - selectedCartItem.productPrice
+        );
+        updatedCartItems = {...state.items, [action.pid]: updatedCartItem}
+    }else{
+        updatedCartItems = {...state.items};
+        delete updatedCartItems[action.pid];
+    }
+
+    return {
+        ...state,
+        items: updatedCartItems,
+        totalAmount: state.totalAmount - selectedCartItem.productPrice
     }
 };

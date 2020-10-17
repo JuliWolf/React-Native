@@ -48,7 +48,6 @@ const styles = StyleSheet.create({
         overflow: 'hidden'
     },
     touchable: {
-
         borderRadius: 10
     },
     imageContainer: {

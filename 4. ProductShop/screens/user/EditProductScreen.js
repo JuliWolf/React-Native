@@ -1,9 +1,11 @@
 import React, {useState, useEffect, useCallback} from 'react';
 import {View, Text, StyleSheet, TextInput, ScrollView, Platform} from "react-native";
 import {HeaderButtons, Item} from "react-navigation-header-buttons";
-import {useSelector} from "react-redux";
+import {useSelector, useDispatch} from "react-redux";
 
 import CustomHeaderButton from "../../components/UI/HeaderButton";
+
+import * as productActions from '../../store/actions/products';
 
 const EditProductScreen = (props) => {
     const prodId = props.navigation.getParam('productId');
@@ -13,15 +15,20 @@ const EditProductScreen = (props) => {
         )
     );
 
-
     const [title, setTitle] = useState(editedProduct ? editedProduct.title : '');
     const [imageURL, setImageURL] = useState(editedProduct ? editedProduct.imageUrl : '');
     const [description, setDescription] = useState(editedProduct ? editedProduct.description : '');
     const [price, setPrice] = useState('');
 
+    const dispatch = useDispatch();
+
     const submitHandler = useCallback(() => {
-        console.log('Submitting!')
-    }, []);
+        if(editedProduct){
+            dispatch(productActions.updateProduct(prodId, title, description, imageURL));
+        }else{
+            dispatch(productActions.createProduct(title, description, imageURL, +price));
+        }
+    }, [dispatch, title, description, imageURL, price]);
 
     useEffect(() => {
         props.navigation.setParams({ submit: submitHandler})
@@ -52,7 +59,7 @@ const EditProductScreen = (props) => {
                         <Text style={styles.label}>Price</Text>
                         <TextInput
                             style={styles.input}
-                            onChangeText={text => setPrice(price)}
+                            onChangeText={text => setPrice(text)}
                             value={price}
                         />
 

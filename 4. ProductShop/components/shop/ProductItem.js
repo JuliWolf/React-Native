@@ -1,16 +1,13 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image, Button} from "react-native";
+import {View, Text, StyleSheet, Image} from "react-native";
 
 import TouchableCmp from "../layout/TouchableCmp";
 
-import Colors from "../../constants/Colors";
-
 const ProductItem = (props) => {
-    console.log(props)
     return (
         <View style={styles.product}>
             <View style={styles.touchable}>
-                <TouchableCmp onPress={props.onViewDetail}>
+                <TouchableCmp onPress={props.onSelect}>
                     <View>
                         <View style={styles.imageContainer}>
                             <Image source={{uri: props.image}} style={styles.image}/>
@@ -22,8 +19,7 @@ const ProductItem = (props) => {
                         </View>
 
                         <View style={styles.actions}>
-                            <Button color={Colors.primary} title="View Detail" onPress={props.onViewDetail}/>
-                            <Button color={Colors.primary} title="To Cart" onPress={props.onAddToCart}/>
+                            {props.children}
                         </View>
                     </View>
                 </TouchableCmp>

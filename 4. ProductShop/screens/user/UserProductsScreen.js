@@ -1,8 +1,12 @@
 import React from 'react';
-import {View, Text, StyleSheet, FlatList} from "react-native";
+import {StyleSheet, FlatList, Platform, Button} from "react-native";
 import {useSelector} from "react-redux";
+import {HeaderButtons, Item} from "react-navigation-header-buttons";
 
 import ProductItem from "../../components/shop/ProductItem";
+import CustomHeaderButton from "../../components/UI/HeaderButton";
+import Colors from "../../constants/Colors";
+import * as cartActions from "../../store/actions/cart";
 
 const UserProductsScreen = (props) => {
     const userProducts = useSelector(state => state.products.userProducts);
@@ -13,19 +17,40 @@ const UserProductsScreen = (props) => {
             keyExtractor={item => item.id}
             renderItem={itemData =>
                 <ProductItem
-                    onViewDetail={() => {}}
-                    onAddToCart={() => {}}
                     image={itemData.item.imageUrl}
                     title={itemData.item.title}
                     price={itemData.item.price}
-                />
+                    onSelect={() => {
+
+                    }}
+                >
+                    <Button color={Colors.primary} title="Edit" onPress={() => {
+
+                    }}/>
+                    <Button color={Colors.primary} title="Delete" onPress={() => {
+
+                    }}/>
+                </ProductItem>
             }
         />
     );
 };
 
-const styles = StyleSheet.create({
-    
-})
+UserProductsScreen.navigationOptions = navData => {
+    return {
+        headerTitle: 'Your Products',
+        headerLeft: () =>
+            <HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
+                <Item
+                    title='Menu'
+                    iconName={Platform.OS === 'android' ? 'md-menu' : 'ios-menu'}
+                    onPress={() => {
+                        navData.navigation.toggleDrawer();
+                    }}
+                />
+            </HeaderButtons>
+    }
+
+}
 
 export default UserProductsScreen;

@@ -8,6 +8,7 @@ import * as ordersActions from '../../store/actions/order';
 
 import Colors from "../../constants/Colors";
 
+
 const CartScreen = (props) => {
     const cartTotalAmount = useSelector(state => state.cart.totalAmount);
     const cartItems = useSelector(state => {
@@ -58,6 +59,10 @@ const CartScreen = (props) => {
     );
 };
 
+CartScreen.navigationOptions = {
+    headerTitle: 'Your Cart'
+};
+
 const styles = StyleSheet.create({
     screen: {
         margin: 20
@@ -86,6 +91,6 @@ const styles = StyleSheet.create({
     amount: {
         color: Colors.primary
     }
-})
+});
 
 export default CartScreen;

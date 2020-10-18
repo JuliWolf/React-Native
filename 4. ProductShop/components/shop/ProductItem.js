@@ -6,6 +6,7 @@ import TouchableCmp from "../layout/TouchableCmp";
 import Colors from "../../constants/Colors";
 
 const ProductItem = (props) => {
+    console.log(props)
     return (
         <View style={styles.product}>
             <View style={styles.touchable}>

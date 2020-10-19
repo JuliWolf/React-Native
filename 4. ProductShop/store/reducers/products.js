@@ -35,7 +35,7 @@ const deleteProduct = (state, action) => {
 
 const createProduct = (state, action) => {
     const newProduct = new Product(
-        (new Date()).toString(),
+        action.productData.id,
         'u1',
         action.productData.title,
         action.productData.imageUrl,

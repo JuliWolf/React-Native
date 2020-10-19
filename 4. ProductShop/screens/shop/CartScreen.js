@@ -44,12 +44,14 @@ const CartScreen = (props) => {
                     <Text style={styles.amount}> ${Math.round(cartTotalAmount.toFixed(2) * 100 / 100)}</Text>
                 </Text>
                 {isLoading ? <Spinner size='small'/> :
-                    <Button
-                        color={Colors.accent}
-                        title="Order Now"
-                        disabled={cartItems.length === 0}
-                        onPress={sendOrderHandler}
-                    />
+                    (
+                        <Button
+                            color={Colors.accent}
+                            title="Order Now"
+                            disabled={cartItems.length === 0}
+                            onPress={sendOrderHandler}
+                        />
+                    )
                 }
 
             </Card>

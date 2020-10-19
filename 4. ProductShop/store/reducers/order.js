@@ -7,12 +7,20 @@ const initialState = {
 
 export default (state = initialState, action) => {
     switch(action.type){
+        case actions.SET_ORDERS:
+            return setOrders(action);
         case actions.ADD_ORDER:
             return addOrder(state, action);
         default:
             return state;
     }
 }
+
+const setOrders = (action) => {
+    return {
+        orders: action.orders
+    }
+};
 
 const addOrder  = (state, action) => {
     const newOrder = new Order(

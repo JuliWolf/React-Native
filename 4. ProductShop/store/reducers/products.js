@@ -10,6 +10,11 @@ const initialState = {
 
 export default (state = initialState, action) => {
     switch(action.type){
+        case actions.SET_PRODUCTS:
+            return {
+                availableProducts: action.products,
+                userProducts: action.products.filter(prod => prod.ownerId === 'u1')
+            }
         case actions.DELETE_PRODUCT:
             return deleteProduct(state, action);
         case actions.CREATE_PRODUCT:

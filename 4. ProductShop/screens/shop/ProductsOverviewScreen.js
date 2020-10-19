@@ -29,6 +29,15 @@ const ProductsOverviewScreen = (props) => {
 
     useEffect(() => {
         loadProducts()
+    }, [loadProducts, dispatch]);
+
+    useEffect(() => {
+        const willFocusSub = props.navigation.addListener('willFocus', () => {
+            loadProducts();
+        });
+        return () => {
+            willFocusSub.remove();
+        };
     }, [loadProducts]);
 
     const selectItemHandler = (id, title) => {

@@ -1,11 +1,10 @@
 import * as actions from '../actions/products';
 
-import PRODUCTS from "../../data/dummy-data";
 import Product from "../../models/product";
 
 const initialState = {
-    availableProducts: PRODUCTS,
-    userProducts: PRODUCTS.filter(prod => prod.ownerId === 'u1')
+    availableProducts: [],
+    userProducts: []
 };
 
 export default (state = initialState, action) => {

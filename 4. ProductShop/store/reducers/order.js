@@ -16,10 +16,10 @@ export default (state = initialState, action) => {
 
 const addOrder  = (state, action) => {
     const newOrder = new Order(
-        (new Date).toString(),
+        action.orderData.id,
         action.orderData.items,
         action.orderData.amount,
-        new Date()
+        action.orderData.date
     );
 
     return {

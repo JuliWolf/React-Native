@@ -1,10 +1,11 @@
 import React, { useEffect, useState, useCallback } from 'react';
-import {FlatList, Platform, Button, ActivityIndicator, View, StyleSheet, Text} from "react-native";
+import {FlatList, Platform, Button, View, StyleSheet, Text} from "react-native";
 import {useSelector, useDispatch} from "react-redux";
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
 
 import ProductItem from "../../components/shop/ProductItem";
 import CustomHeaderButton from "../../components/UI/HeaderButton";
+import Spinner from "../../components/UI/Spinner";
 
 import * as cartActions from '../../store/actions/cart';
 import * as productsActions from '../../store/actions/products';
@@ -60,9 +61,7 @@ const ProductsOverviewScreen = (props) => {
 
     if(isLoading){
         return (
-            <View style={styles.centered}>
-                <ActivityIndicator size='large' color={Colors.primary}/>
-            </View>
+            <Spinner/>
         )
     }
 

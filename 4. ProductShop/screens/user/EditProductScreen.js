@@ -5,19 +5,16 @@ import {
     ScrollView,
     Platform,
     Alert,
-    KeyboardAvoidingView,
-    ActivityIndicator,
-    Text, Button
+    KeyboardAvoidingView
 } from "react-native";
 import {HeaderButtons, Item} from "react-navigation-header-buttons";
 import {useSelector, useDispatch} from "react-redux";
 
 import CustomHeaderButton from "../../components/UI/HeaderButton";
 import Input from "../../components/UI/Input";
+import Spinner from "../../components/UI/Spinner";
 
 import * as productActions from '../../store/actions/products';
-
-import Colors from "../../constants/Colors";
 
 const FORM_INPUT_UPDATE = 'UPDATE';
 
@@ -134,9 +131,7 @@ const EditProductScreen = (props) => {
 
     if(isLoading){
         return (
-            <View style={styles.centered}>
-                <ActivityIndicator size='large' color={Colors.primary}/>
-            </View>
+            <Spinner/>
         );
     }
 
@@ -218,11 +213,6 @@ EditProductScreen.navigationOptions = navData => {
 const styles = StyleSheet.create({
     form: {
         margin: 20
-    },
-    centered: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
     }
 });
 

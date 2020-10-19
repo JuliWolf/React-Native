@@ -1,5 +1,14 @@
-import React, {useEffect, useCallback, useReducer} from 'react';
-import {View, StyleSheet, ScrollView, Platform, Alert, KeyboardAvoidingView} from "react-native";
+import React, {useEffect, useCallback, useReducer, useState} from 'react';
+import {
+    View,
+    StyleSheet,
+    ScrollView,
+    Platform,
+    Alert,
+    KeyboardAvoidingView,
+    ActivityIndicator,
+    Text, Button
+} from "react-native";
 import {HeaderButtons, Item} from "react-navigation-header-buttons";
 import {useSelector, useDispatch} from "react-redux";
 
@@ -7,6 +16,8 @@ import CustomHeaderButton from "../../components/UI/HeaderButton";
 import Input from "../../components/UI/Input";
 
 import * as productActions from '../../store/actions/products';
+
+import Colors from "../../constants/Colors";
 
 const FORM_INPUT_UPDATE = 'UPDATE';
 
@@ -38,6 +49,9 @@ const formReducer = (state, action) => {
 };
 
 const EditProductScreen = (props) => {
+    const [isLoading, setIsLoading] = useState(false);
+    const [error, setError] = useState();
+
     const prodId = props.navigation.getParam('productId');
     const editedProduct = useSelector(state =>
         state.products.userProducts.find(prod =>
@@ -63,34 +77,50 @@ const EditProductScreen = (props) => {
         formIsValid: !!editedProduct
     })
 
-    const submitHandler = useCallback(() => {
+    const submitHandler = useCallback(async () => {
         if(!formState.formIsValid){
             Alert.alert('Wrong input!', 'Please check the errors in the form!', [
                 {text: 'Okay'}
             ])
             return;
         }
-        if(editedProduct){
-            dispatch(productActions.updateProduct(
-                prodId,
-                formState.inputValues.title,
-                formState.inputValues.description,
-                formState.inputValues.imageUrl
-            ));
-        }else{
-            dispatch(productActions.createProduct(
-                formState.inputValues.title,
-                formState.inputValues.description,
-                formState.inputValues.imageUrl,
-                +formState.inputValues.price
-            ));
+
+        setIsLoading(true);
+        setError(null);
+        try {
+            if(editedProduct){
+                await dispatch(productActions.updateProduct(
+                    prodId,
+                    formState.inputValues.title,
+                    formState.inputValues.description,
+                    formState.inputValues.imageUrl
+                ));
+            }else{
+                await dispatch(productActions.createProduct(
+                    formState.inputValues.title,
+                    formState.inputValues.description,
+                    formState.inputValues.imageUrl,
+                    +formState.inputValues.price
+                ));
+            }
+            props.navigation.goBack();
+        }catch(error){
+            setError(error.message);
         }
-        props.navigation.goBack();
+        setIsLoading(false);
     }, [dispatch, formState]);
 
     useEffect(() => {
         props.navigation.setParams({ submit: submitHandler})
     }, [submitHandler]);
+
+    useEffect(() => {
+        if(error){
+            Alert.alert('An error occurred!', error, [
+                {text: 'Okay'}
+            ])
+        }
+    }, [error]);
 
     const inputChangeHandler = useCallback((inputIdentifier, inputValue, inputValidity)  => {
         dispatchFormState({
@@ -100,6 +130,15 @@ const EditProductScreen = (props) => {
             input: inputIdentifier
         });
     }, [dispatchFormState]);
+
+
+    if(isLoading){
+        return (
+            <View style={styles.centered}>
+                <ActivityIndicator size='large' color={Colors.primary}/>
+            </View>
+        );
+    }
 
     return (
         <KeyboardAvoidingView behavior="padding" keyboardVerticalOffset={100} style={{flex: 1}}>
@@ -179,6 +218,11 @@ EditProductScreen.navigationOptions = navData => {
 const styles = StyleSheet.create({
     form: {
         margin: 20
+    },
+    centered: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
     }
 });
 

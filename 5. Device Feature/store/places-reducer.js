@@ -1,0 +1,26 @@
+import * as actions from './places-actions';
+
+import Place from "../models/Place";
+
+const initialState = {
+    places: []
+}
+export default (state = initialState, action) => {
+    switch (action.type){
+        case actions.ADD_PLACE:
+            return addPlace(state, action);
+        default:
+            return state;
+    }
+}
+
+
+const addPlace = (state, action) => {
+    const newPlace = new Place(
+        (new Date()).toString(),
+        action.placeData.title
+    );
+    return {
+        places: state.places.concat(newPlace)
+    }
+};

@@ -8,6 +8,8 @@ export default (state = initialState, action) => {
     switch (action.type){
         case actions.AUTHENTICATE:
             return authenticate(action);
+        case actions.LOGOUT:
+            return logout();
         // case actions.SIGNUP:
         //     return signUp(action);
         default:
@@ -28,3 +30,7 @@ const authenticate = (action) => {
 //         userId: action.userId
 //     };
 // };
+
+const logout = () => {
+    return initialState;
+}

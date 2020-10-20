@@ -1,8 +1,8 @@
 import React from 'react';
-import { Platform } from "react-native";
+import { Platform, SafeAreaView, Button, View } from "react-native";
 import {createStackNavigator} from "react-navigation-stack";
 import { createAppContainer, createSwitchNavigator } from "react-navigation";
-import {createDrawerNavigator} from "react-navigation-drawer";
+import {createDrawerNavigator, DrawerNavigatorItems} from "react-navigation-drawer";
 import {Ionicons} from "@expo/vector-icons";
 
 import ProductsOverviewScreen from "../screens/shop/ProductsOverviewScreen";
@@ -13,6 +13,8 @@ import UserProductsScreen from "../screens/user/UserProductsScreen";
 import EditProductScreen from "../screens/user/EditProductScreen";
 import AuthScreen from "../screens/user/AuthScreen";
 import StartupScreen from "../screens/StartupScreen";
+
+import LogoutButton from "../components/UI/LogoutButton";
 
 import Colors from "../constants/Colors";
 
@@ -79,7 +81,8 @@ const ShopNavigator = createDrawerNavigator({
 }, {
     contentOptions: {
         activeTintColor: Colors.primary
-    }
+    },
+    contentComponent: LogoutButton
 });
 
 const AuthNavigator = createStackNavigator({

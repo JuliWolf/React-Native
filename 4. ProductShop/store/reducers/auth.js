@@ -6,25 +6,25 @@ const initialState = {
 }
 export default (state = initialState, action) => {
     switch (action.type){
-        case actions.LOGIN:
-            return login(action);
-        case actions.SIGNUP:
-            return signUp(action);
+        case actions.AUTHENTICATE:
+            return authenticate(action);
+        // case actions.SIGNUP:
+        //     return signUp(action);
         default:
             return state;
     }
 }
 
-const login = (action) => {
+const authenticate = (action) => {
     return {
         token: action.token,
         userId: action.userId
     };
 };
-
-const signUp = (action) => {
-    return {
-        token: action.token,
-        userId: action.userId
-    };
-};
+//
+// const signUp = (action) => {
+//     return {
+//         token: action.token,
+//         userId: action.userId
+//     };
+// };

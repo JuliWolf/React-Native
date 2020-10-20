@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { FlatList, Platform} from "react-native";
+import {FlatList, Platform, Text, View} from "react-native";
 import {useSelector, useDispatch} from "react-redux";
 import {HeaderButtons, Item} from "react-navigation-header-buttons";
 
@@ -27,6 +27,12 @@ const OrdersScreen = (props) => {
         return (
             <Spinner/>
         )
+    }
+
+    if(orders.length === 0){
+        return <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+            <Text>No orders found, maybe start creating some!</Text>
+        </View>
     }
 
     return (

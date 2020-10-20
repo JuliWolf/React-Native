@@ -12,7 +12,6 @@ const LogoutButton = (props) => {
 
     const logout = () => {
         dispatch(authActions.logout());
-        props.navigation.navigate('Auth');
     };
 
     return (

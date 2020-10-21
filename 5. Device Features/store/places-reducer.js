@@ -9,6 +9,8 @@ export default (state = initialState, action) => {
     switch (action.type){
         case actions.ADD_PLACE:
             return addPlace(state, action);
+        case actions.SET_PLACES:
+            return fetchPlaces(state, action);
         default:
             return state;
     }
@@ -25,3 +27,9 @@ const addPlace = (state, action) => {
         places: state.places.concat(newPlace)
     }
 };
+
+const fetchPlaces = (state, action) => {
+    return {
+        places: action.places.map(pl => new Place(pl.id, pl.title, pl.imageUri))
+    };
+}

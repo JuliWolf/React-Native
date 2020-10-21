@@ -17,7 +17,7 @@ export default (state = initialState, action) => {
 
 const addPlace = (state, action) => {
     const newPlace = new Place(
-        (new Date()).toString(),
+        action.placeData.id,
         action.placeData.title,
         action.placeData.image
     );

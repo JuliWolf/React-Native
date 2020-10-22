@@ -11,10 +11,14 @@ const MapScreen = props => {
     }
 
     return (
-        <MapView region={mapRegion}/>
+        <MapView region={mapRegion} style={styles.map}/>
     );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+    map: {
+        flex: 1
+    }
+});
 
 export default MapScreen;

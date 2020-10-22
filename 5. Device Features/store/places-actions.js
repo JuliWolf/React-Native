@@ -16,7 +16,8 @@ export const addPlace = (title, image, location) => {
         if(!resData.results){
             throw new Error('Something went wrong!');
         }
-        const address = resData.results ? resData.results[0].formatted_address : 'Dummy Data';
+        // const address = resData.results ? resData.results[0].formatted_address : 'Dummy Data';
+        const address = 'Dummy Data';
         const fileName = image.split('/').pop();
         const newPath = FileSystem.documentDirectory + fileName;
 

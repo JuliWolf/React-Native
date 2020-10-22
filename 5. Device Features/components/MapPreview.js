@@ -9,7 +9,7 @@ const MapPreview = (props) => {
 &markers=color:red%7Clabel:A%7C${props.location.lat},${props.location.lng}
 &key=`;
     }
-    console.log(imagePreviewUrl)
+    // console.log(imagePreviewUrl)
 
     return (
         <TouchableOpacity onPress={props.onPress} style={{...styles.mapPreview, ...props.style}}>

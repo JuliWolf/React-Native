@@ -12,6 +12,7 @@ import Colors from "../constants/Colors";
 const NewPlaceScreen = props => {
     const [titleValue, setTitleValue] = useState('');
     const [imageValue, setImageValue] = useState();
+    const [selectedLocation, setSelectedLocation] = useState();
 
     const dispatch = useDispatch();
 
@@ -20,7 +21,7 @@ const NewPlaceScreen = props => {
     };
 
     const savePlaceHandler = () => {
-        dispatch(placesActions.addPlace(titleValue, imageValue));
+        dispatch(placesActions.addPlace(titleValue, imageValue, selectedLocation));
         props.navigation.goBack();
     };
 
@@ -29,7 +30,7 @@ const NewPlaceScreen = props => {
     };
 
     const locationPickedHandler = useCallback((location) => {
-        console.log(location)
+        setSelectedLocation(location);
     }, []);
 
     return (

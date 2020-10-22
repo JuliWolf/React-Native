@@ -10,6 +10,15 @@ const PlaceDetailScreen = props => {
     const placeId = props.navigation.getParam('placeId');
     const selectedPlace = useSelector(state => state.places.places.find(place => place.id === placeId));
 
+    const selectedLocation = {lat: selectedPlace.lat, lng: selectedPlace.lng};
+
+    const showMapHandler = () => {
+        props.navigation.navigate('Map', {
+            readonly: true,
+            initialLocation: selectedLocation
+        })
+    };
+
     return (
         <ScrollView contentContainerStyle={{alignItems: 'center'}}>
             <Image source={{uri: selectedPlace.imageUri}} style={styles.image}/>
@@ -19,8 +28,10 @@ const PlaceDetailScreen = props => {
                 </View>
 
                 <MapPreview
-                    location={{lat: selectedPlace.lat, lng: selectedPlace.lng}}
-                    style={styles.mapPreview}/>
+                    location={selectedLocation}
+                    style={styles.mapPreview}
+                    onPress={showMapHandler}
+                />
             </View>
         </ScrollView>
     );

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Platform, SafeAreaView, Button, View} from "react-native";
+import {Platform} from "react-native";
 import {createStackNavigator} from "@react-navigation/stack";
 import {createDrawerNavigator} from "@react-navigation/drawer";
 import {Ionicons} from "@expo/vector-icons";
@@ -11,7 +11,6 @@ import OrdersScreen, {screenOptions as ordersOptions} from "../screens/shop/Orde
 import UserProductsScreen, {screenOptions as userProductsOptions} from "../screens/user/UserProductsScreen";
 import EditProductScreen, {screenOptions as editProductOptions} from "../screens/user/EditProductScreen";
 import AuthScreen, {screenOptions as authOptions} from "../screens/user/AuthScreen";
-import StartupScreen from "../screens/StartupScreen";
 
 import LogoutButton from "../components/UI/LogoutButton";
 
@@ -161,7 +160,7 @@ export const AuthNavigator = () => {
 
 const ShopDrawerNavigator = createDrawerNavigator();
 
-const ShopNavigator = () => {
+export const ShopNavigator = () => {
     return (
         <ShopDrawerNavigator.Navigator
             drawerContent={LogoutButton}
@@ -226,10 +225,10 @@ const ShopNavigator = () => {
 
 
 
-const MainNavigator = createSwitchNavigator({
-    Startup: StartupScreen,
-    Auth: AuthNavigator,
-    Shop: ShopNavigator
-});
+// const MainNavigator = createSwitchNavigator({
+//     Startup: StartupScreen,
+//     Auth: AuthNavigator,
+//     Shop: ShopNavigator
+// });
 
-export default createAppContainer(MainNavigator);
+// export default createAppContainer(MainNavigator);

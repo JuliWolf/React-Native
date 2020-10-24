@@ -1,20 +1,14 @@
-import React, {useEffect, useRef} from 'react';
+import React from 'react';
 import {useSelector} from "react-redux";
-import {NavigationActions} from "react-navigation";
+import {NavigationContainer} from "@react-navigation/native";
+import {  }
 
 import ShopNavigator from "./ShopNavigator";
 
-const NavigationContainer = (props) => {
-    const navRef = useRef();
+const AppNavigation = (props) => {
     const isAuth = useSelector(state => !!state.auth.token);
 
-    useEffect(() => {
-        if(!isAuth){
-            navRef.current.dispatch(
-                NavigationActions.navigate({routeName: 'Auth'}))
-        }
-    }, [isAuth])
-    return <ShopNavigator ref={navRef}/>
+    return ;
 };
 
-export default NavigationContainer;
+export default AppNavigation;

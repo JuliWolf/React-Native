@@ -159,18 +159,70 @@ export const AuthNavigator = () => {
 //     defaultNavigationOptions: defaultNavOptions
 // });
 
+const ShopDrawerNavigator = createDrawerNavigator();
 
+const ShopNavigator = () => {
+    return (
+        <ShopDrawerNavigator.Navigator
+            drawerContent={LogoutButton}
+            drawerContentOptions={
+                {
+                    activeTintColor: Colors.primary
+                }
+            }>
+            <ShopDrawerNavigator.Screen
+                name="Products"
+                component={ProductsNavigator}
+                options={
+                    {
+                        drawerIcon: props => <Ionicons
+                            name={Platform.OS === 'android' ? 'md-cart' : 'ios-cart'}
+                            size={23}
+                            color={props.color}
+                        />
+                    }
+                }
+            />
+            <ShopDrawerNavigator.Screen
+                name="Orders"
+                component={OrdersNavigator}
+                options={
+                    {
+                        drawerIcon: props => <Ionicons
+                            name={Platform.OS === 'android' ? 'md-list' : 'ios-list'}
+                            size={23}
+                            color={props.color}
+                        />
+                    }
+                }
+            />
+            <ShopDrawerNavigator.Screen
+                name="Admin"
+                component={AdminNavigator}
+                options={
+                    {
+                        drawerIcon: props => <Ionicons
+                            name={Platform.OS === 'android' ? 'md-create' : 'ios-create'}
+                            size={23}
+                            color={props.color}
+                        />
+                    }
+                }
+            />
+        </ShopDrawerNavigator.Navigator>
+    );
+};
 
-const ShopNavigator = createDrawerNavigator({
-    Products: ProductsNavigator,
-    Orders: OrdersNavigator,
-    Admin: AdminNavigator
-}, {
-    contentOptions: {
-        activeTintColor: Colors.primary
-    },
-    contentComponent: LogoutButton
-});
+// const ShopNavigator = createDrawerNavigator({
+//     Products: ProductsNavigator,
+//     Orders: OrdersNavigator,
+//     Admin: AdminNavigator
+// }, {
+//     contentOptions: {
+//         activeTintColor: Colors.primary
+//     },
+//     contentComponent: LogoutButton
+// });
 
 
 

@@ -50,9 +50,9 @@ const OrdersScreen = props => {
       keyExtractor={item => item.id}
       renderItem={itemData => (
         <OrderItem
-          amount={itemData.item.totalAmount}
+          amount={itemData.item.totalAmount ? itemData.item.totalAmount : 0}
           date={itemData.item.readableDate}
-          items={itemData.item.items}
+          items={itemData.item.items ? itemData.item.items : []}
         />
       )}
     />
@@ -62,7 +62,7 @@ const OrdersScreen = props => {
 export const screenOptions = navData => {
   return {
     headerTitle: 'Your Orders',
-    headerLeft: (
+    headerLeft: () =>(
       <HeaderButtons HeaderButtonComponent={HeaderButton}>
         <Item
           title="Menu"

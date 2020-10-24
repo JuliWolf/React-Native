@@ -7,7 +7,7 @@ import Card from '../UI/Card';
 
 const OrderItem = props => {
   const [showDetails, setShowDetails] = useState(false);
-
+  console.log(props.amount)
   return (
     <Card style={styles.orderItem}>
       <View style={styles.summary}>

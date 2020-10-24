@@ -9,10 +9,8 @@ import Colors from "../../constants/Colors";
 
 
 const LogoutButton = (props) => {
-    const dispatch = useDispatch();
-
     const logout = () => {
-        dispatch(authActions.logout());
+        props.dispatch(authActions.logout());
     };
 
     return (

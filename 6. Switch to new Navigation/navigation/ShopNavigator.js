@@ -15,6 +15,7 @@ import AuthScreen, {screenOptions as authOptions} from "../screens/user/AuthScre
 import LogoutButton from "../components/UI/LogoutButton";
 
 import Colors from "../constants/Colors";
+import {useDispatch} from "react-redux";
 
 
 const defaultNavOptions = {
@@ -161,9 +162,10 @@ export const AuthNavigator = () => {
 const ShopDrawerNavigator = createDrawerNavigator();
 
 export const ShopNavigator = () => {
+    const dispatch = useDispatch();
     return (
         <ShopDrawerNavigator.Navigator
-            drawerContent={LogoutButton}
+            drawerContent={(props) => <LogoutButton dispatch={dispatch} {...props}/>}
             drawerContentOptions={
                 {
                     activeTintColor: Colors.primary

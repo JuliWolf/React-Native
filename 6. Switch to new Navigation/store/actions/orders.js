@@ -41,7 +41,7 @@ export const addOrder = (cartItems, totalAmount) => {
     const userId = getState().auth.userId;
     const date = new Date();
     const response = await fetch(
-      `https://rn-complete-guide-22235.firebaseio.com/orders/${userId}.json`,
+        `https://rn-complete-guide-22235.firebaseio.com/orders/${userId}.json?auth=${token}`,
       {
         method: 'POST',
         headers: {

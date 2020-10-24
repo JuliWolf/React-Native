@@ -10,6 +10,7 @@ import cartReducer from './store/reducers/cart';
 import ordersReducer from './store/reducers/orders';
 import authReducer from './store/reducers/auth';
 import AppNavigator from './navigation/AppNavigator';
+import NavigationContainer from "../4. ProductShop/navigation/NavigationContainer";
 
 const rootReducer = combineReducers({
   products: productsReducer,
@@ -29,20 +30,17 @@ const fetchFonts = () => {
 
 export default function App() {
   const [fontLoaded, setFontLoaded] = useState(false);
-
-  if (!fontLoaded) {
-    return (
-      <AppLoading
+  if(!fontLoaded){
+    return <AppLoading
         startAsync={fetchFonts}
-        onFinish={() => {
-          setFontLoaded(true);
-        }}
-      />
-    );
+        onFinish={() => setFontLoaded(true)}
+        onError={(err) => console.log(err)}
+    />
   }
+
   return (
-    <Provider store={store}>
-      <AppNavigator />
-    </Provider>
+      <Provider store={store}>
+        <NavigationContainer/>
+      </Provider>
   );
 }

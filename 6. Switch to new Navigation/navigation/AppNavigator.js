@@ -1,26 +1,20 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import React, {useEffect, useRef} from 'react';
+import {useSelector} from "react-redux";
+import {NavigationActions} from "react-navigation";
 
-// import ShopNavigator from './ShopNavigator';
-import ProductsOverviewScreen from '../screens/shop/ProductsOverviewScreen';
+import ShopNavigator from "./ShopNavigator";
 
-const MyStack = createStackNavigator();
+const NavigationContainer = (props) => {
+    const navRef = useRef();
+    const isAuth = useSelector(state => !!state.auth.token);
 
-const AppNavigator = props => {
-  const isAuth = useSelector(state => !!state.auth.token);
-
-  return (
-    <NavigationContainer>
-      <MyStack.Navigator>
-        <MyStack.Screen
-          name="ProductsOverview"
-          component={ProductsOverviewScreen}
-        />
-      </MyStack.Navigator>
-    </NavigationContainer>
-  );
+    useEffect(() => {
+        if(!isAuth){
+            navRef.current.dispatch(
+                NavigationActions.navigate({routeName: 'Auth'}))
+        }
+    }, [isAuth])
+    return <ShopNavigator ref={navRef}/>
 };
 
-export default AppNavigator;
+export default NavigationContainer;

@@ -4,6 +4,14 @@ import {StyleSheet, Text, View, Button} from 'react-native';
 import * as Notifications from 'expo-notifications';
 import * as Permissions from 'expo-permissions';
 
+Notifications.setNotificationHandler({
+    handleNotification: async () => {
+        return {
+            shouldShowAlert: true
+        };
+    }
+});
+
 export default function App() {
     useEffect(() => {
         Permissions.getAsync(Permissions.NOTIFICATIONS)
@@ -26,7 +34,7 @@ export default function App() {
                 body: 'This is the first local notification we are sending!'
             },
             trigger: {
-                seconds: 10
+                seconds: 2
             }
         });
     };

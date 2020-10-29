@@ -28,7 +28,8 @@ const addToCart = (state, action) => {
     const addedProduct = action.product;
     const productPrice = addedProduct.price;
     const productTitle = addedProduct.title;
-
+    const pushToken = addedProduct.pushToken;
+console.log(addedProduct)
     let cartItem;
 
     if(state.items[addedProduct.id]){
@@ -36,10 +37,11 @@ const addToCart = (state, action) => {
             state.items[addedProduct.id].quantity + 1,
             productPrice,
             productTitle,
+            pushToken,
             state.items[addedProduct.id].sum + productPrice
         );
     }else{
-        cartItem = new CartItem(1, productPrice, productTitle, productPrice);
+        cartItem = new CartItem(1, productPrice, productTitle, pushToken, productPrice);
     }
     return {
         ...state,

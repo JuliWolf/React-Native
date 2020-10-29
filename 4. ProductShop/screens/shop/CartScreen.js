@@ -22,8 +22,9 @@ const CartScreen = (props) => {
             transformedCartItems.push({
                 productId: key,
                 ...state.cart.items[key]
-            })
+            });
         }
+
         return transformedCartItems.sort((a, b) =>
             a.productId > b.productId ? 1 : -1
         );

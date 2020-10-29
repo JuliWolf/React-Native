@@ -29,8 +29,10 @@ export default function App() {
             .then(() => {
                 return Notifications.getExpoPushTokenAsync();
             })
-            .then(data => {
-                console.log(data);
+            .then(response => {
+                const token = response.data;
+                console.log(response);
+
             })
             .catch((err) => {
                 return null;
@@ -63,6 +65,7 @@ export default function App() {
         //         channelId: 'new-push'
         //     }
         // });
+
     };
     return (
         <View style={styles.container}>

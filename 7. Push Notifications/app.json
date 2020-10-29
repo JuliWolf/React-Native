@@ -28,6 +28,10 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "notification": {
+      "iosDisplayInForeground": true,
+      "androidMode": "default"
     }
   }
 }

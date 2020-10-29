@@ -27,21 +27,37 @@ export default function App() {
                 }
             });
     }, []);
-    const triggerNotificationHandler = () => {
+
+    useEffect(() => {
+        const backgroundSubscription = Notifications.addNotificationResponseReceivedListener(notification => {
+            console.log(notification);
+        });
+
+        const foregroundSubscription = Notifications.addNotificationReceivedListener(notification => {
+            console.log(notification);
+        });
+
+        return () => {
+            foregroundSubscription.remove();
+            backgroundSubscription.remove();
+        };
+    }, []);
+
+    const triggerNotificationHandler = async () => {
         Notifications.scheduleNotificationAsync({
             content: {
                 title: 'My first local notification',
                 body: 'This is the first local notification we are sending!'
             },
             trigger: {
-                seconds: 2
+                seconds: 2,
+                channelId: 'new-push'
             }
         });
     };
     return (
         <View style={styles.container}>
-            <Text>Open up App.js to start working on your app!</Text>
-            <Button title="Trigger notification" onPRress={triggerNotificationHandler}/>
+            <Button title="Trigger notification" onPress={triggerNotificationHandler}/>
             <StatusBar style="auto"/>
         </View>
     );

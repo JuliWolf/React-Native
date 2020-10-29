@@ -23,8 +23,17 @@ export default function App() {
             })
             .then(statusObj => {
                 if(statusObj.status !== 'granted'){
-                    return;
+                    throw new Error('Permission not granted!')
                 }
+            })
+            .then(() => {
+                return Notifications.getExpoPushTokenAsync();
+            })
+            .then(data => {
+                console.log(data);
+            })
+            .catch((err) => {
+                return null;
             });
     }, []);
 
@@ -44,16 +53,16 @@ export default function App() {
     }, []);
 
     const triggerNotificationHandler = async () => {
-        Notifications.scheduleNotificationAsync({
-            content: {
-                title: 'My first local notification',
-                body: 'This is the first local notification we are sending!'
-            },
-            trigger: {
-                seconds: 2,
-                channelId: 'new-push'
-            }
-        });
+        // Notifications.scheduleNotificationAsync({
+        //     content: {
+        //         title: 'My first local notification',
+        //         body: 'This is the first local notification we are sending!'
+        //     },
+        //     trigger: {
+        //         seconds: 2,
+        //         channelId: 'new-push'
+        //     }
+        // });
     };
     return (
         <View style={styles.container}>

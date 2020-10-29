@@ -29,7 +29,7 @@ const addToCart = (state, action) => {
     const productPrice = addedProduct.price;
     const productTitle = addedProduct.title;
     const pushToken = addedProduct.pushToken;
-console.log(addedProduct)
+
     let cartItem;
 
     if(state.items[addedProduct.id]){
